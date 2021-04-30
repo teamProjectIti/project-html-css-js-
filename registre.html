@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            top: 40%;
+            left: 50%;
+            transform: translate(65%, 40%);
+            width: 600px;
+            text-align: center;
+            background-image: url("photo/001.jpg") ;
+            background-size: cover;
+        }
+        form input{
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            box-shadow: 2px 2px 2px 1px silver;
+        }
+        .over{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin-top: 0px;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        label,legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 2px 1px red;
+        }
+        .img{
+            background-image: url(photo/001.jpg);
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+<body class="img">
+    <form action="post" style="border-radius: 10px;">
+        <div class="over"></div>
+        <fieldset >
+            <legend>register</legend>
+            <div style="margin:20px;">
+                <label for="username">username</label>
+                <br>
+                <input  type="text" autofocus value="" placeholder="your name" required maxlength="30" minlength="3" id="username" name="username" >
+            </div>
+
+            <div style="margin:20px;">
+                <label for="age">age</label>
+                <br>
+
+                <input type="number" value="" placeholder="your name" required maxlength="30" minlength="3" id="age" name="age" >
+            </div>
+            <div style="margin:20px;">
+                <label for="Email">Email</label>
+                <br>
+
+                <input type="email" value="" placeholder="your name" required maxlength="30" minlength="3" id="Email" name="Email" >
+              <br>
+                <strong class="divInvalid" style="background-color: rgba(0, 0, 0, 0.5);color: white;">
+
+                    The required email address may not include any special characters other than the '@' sign.
+                </strong>             
+            </div>
+            <div style="margin:20px;">
+                <label for="password">password</label>
+                <br>
+
+                <input type="password" value="" placeholder="your name" required maxlength="30" minlength="3" id="password" name="password" >
+            </div>
+            <div style="margin:20px;">
+                <label for="time">time</label>
+                <br>
+
+                <input type="time" value="" placeholder="your name" required maxlength="30" minlength="3" id="time" name="time" >
+            </div>   
+             <div style="margin:20px;">
+                <label for="date">date</label>
+                <br>
+
+                <input type="date" value="" placeholder="your name" required maxlength="30" minlength="3" id="date" name="date" >
+            </div>
+        
+        </fieldset>
+        <fieldset >
+            <legend>create new account</legend>
+<input type="submit" value="register">
+        </fieldset>
+    </form>
+</body>
+</html>
